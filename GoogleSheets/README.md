@@ -2,7 +2,7 @@
 ## Google Sheets: This document convert from Google Sheets
 [The Economic Growth and CO2 Emissions](https://docs.google.com/spreadsheets/d/1tnvg9o-v-M1K_8bLTWvXu5R67JQsp6im0uz1mbB8qsI/edit?usp=sharing)
 
-## Google Sheets: This document convert from Google Sheets
+## Open Document: This document convert from Google Sheets
 [The Economic Growth and CO2 Emissions - Open Document](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/GoogleSheets/Economic%20Growth%20and%20CO2%20Emissions-new.ods)
 
 ## HTML: The graphs in HTML present by Google sheets which local in Internet.
