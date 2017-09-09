@@ -1,4 +1,13 @@
-# INF 554 Assignment 2
+# Assignment of SVG
+
+Create and publish a bubble cloud in three different ways. Use node.js and browsersync to develop and explain how to start the web server. 
+
+Create three bubble charts in one HTML document:
+* **SVG Prototype**: pick one attribute from UN Data for 10 countries and create a bubble cloud with [Inkscape](http://www.inkscape.org) as an SVG prototype in `prototype.svg`. Put in `index.html`.
+* **SVG Code**: manually recreate the same bubble cloud by writing SVG code in `index.html` (i.e., writing SVG yourself, not re-using the SVG created by Inkscape!). Use a `style.css` file.
+* **Dynamic SVG**: recreate the same bubble cloud using JavaScript (i.e., dynamically generating the SVG). Use a `chart.js` file.
+* Describe your data and charts as needed in the page.
+
 
 ## SVG prototype:
 [The SVG prototype file](https://github.com/INF554Fall17/a2-Cheng-Lin-Li/blob/master/prototype.svg?short_path=a9581bf)
