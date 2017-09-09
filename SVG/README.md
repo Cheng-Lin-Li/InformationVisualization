@@ -1,4 +1,4 @@
-# Assignment of SVG
+ # Scalable Vector Graphics (SVG) Drawing
 
 Create and publish a bubble cloud in three different ways. Use node.js and browsersync to develop and explain how to start the web server. 
 
