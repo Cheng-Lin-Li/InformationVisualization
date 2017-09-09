@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CO2 Emissions per GDP in Year 2011</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <script src="js/chart.js"></script>
+    <div class="location center">
+        <table>
+            <tr>
+                <td>
+                    <h1>CO2 Emissions per GDP in Year 2011</h1>
+                    <h2>How many CO2 metric tons will be generated for every one US$ in 2011?</h2>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <img src="./prototype.svg" alt="SVG prototype by Inkscape." /><br />
+                        Figure 1. SVG diagram draws by Inkscape<br />
+                        This diagram indicates China generates 1,199 metric tons of CO2 for one US$ of GDP. India, Russian generate second and third place respectively.<br />
+                        <br />
+                        <br />
+                        <br />
+                    </p>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <svg width="900" height="600">
+                            <!-- Title and subtitle for the diagram-->
+                            <text class="title" x="30" y="49"><tspan> CO2 emission in Year 2011 </tspan></text>
+                            <text class="subtitle" x="29" y="78"><tspan> Metric tons of CO2 per US$ of GDP </tspan></text>
+
+                            <!--Draw Circle of China-->
+                            <circle cx="663" cy="321" r="100.5" fill="#ffad33" />
+                            <!--Label text and number of CO2 emission-->
+                            <text x="585" y="300" style="font-size:60px"><tspan> China </tspan></text>
+                            <text class="white" x="568" y="368" style="font-size:70px" ><tspan> 1,199 </tspan></text>                            
+
+                            <circle cx="123" cy="273" r="56.2" fill="#5a82aa" />
+                            <text x="61" y="256" style="font-size:20px" ><tspan> United States </tspan></text>
+                            <text class="white" x="76" y="307" style="font-size:55px;" ><tspan> 342 </tspan></text>
+
+                            <circle cx="515" cy="452" r="96.2" fill="#2fa9cd" />
+                            <text x="445" y="435" style="font-size:65px"><tspan> India </tspan></text>
+                            <text class="white" x="425" y="503" style="font-size:68px" ><tspan> 1,108 </tspan></text>
+
+                            <circle cx="658" cy="132" r="85.4" fill="#85bb33" />
+                            <text x="589" y="112" style="font-size:40px"><tspan> Russian </tspan></text>
+                            <text class="white" x="592" y="194" style="font-size:80px"><tspan> 890 </tspan></text>
+
+                            <circle cx="802" cy="296" r="39.4" fill="#e46992" />
+                            <text x="768" y="290" style="font-size:25px"><tspan> Japan </tspan></text>
+                            <text class="white" x="770" y="321" style="font-size:35px"><tspan> 193 </tspan></text>
+
+                            <circle cx="538" cy="184" r="41.1" fill="#ad33ad" />
+                            <text x="503" y="175" style="font-size:17px"><tspan> Germany </tspan></text>
+                            <text class="white" x="500" y="212" style="font-size:43px"><tspan> 194 </tspan></text>
+
+                            <circle cx="124" cy="167" r="49.7" fill="#e36141" />
+                            <text x="80" y="160" style="font-size:25px"><tspan> Canada </tspan></text>
+                            <text class="white" x="90" y="200" style="font-size:44px"><tspan> 271 </tspan></text>
+
+                            <circle cx="463" cy="137" r="36.7" fill="#a54050" />
+                            <text x="400" y="132" style="font-size:17px"><tspan> United Kingdom </tspan></text>
+                            <text class="white" x="431" y="162" style="font-size:35px"><tspan> 172 </tspan></text>
+
+                            <circle cx="198" cy="400" r="30.3" fill="#3366cc" />
+                            <text x="175" y="394" style="font-size:17px"><tspan> Brazil </tspan></text>
+                            <text class="white" x="170" y="420" style="font-size:30px"><tspan> 168 </tspan></text>
+
+                            <circle cx="482" cy="210" r="19.4" fill="#40ab46" />
+                            <text x="467" y="205" style="font-size:10px"><tspan> France </tspan></text>
+                            <text class="white" x="452" y="225" style="font-size:25px"><tspan> 118 </tspan></text>
+                        </svg>
+                        Figure 2. SVG diagram draws by html<br />
+                        This diagram indicates China generates 1,199 metric tons of CO2 for one US$ of GDP. India, Russian generate second and third place respectively.<br />
+                        <br />
+                        <br />
+                        <br />
+                    </p>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> 
+                        <div id="show-svg"></div>
+                        <script>bubble_cloud()</script>
+                        Figure 3. SVG diagram draws by javascript.<br />
+                        This diagram indicates China generates 1,199 metric tons of CO2 for one US$ of GDP. India, Russian generate second and third place respectively.<br />
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

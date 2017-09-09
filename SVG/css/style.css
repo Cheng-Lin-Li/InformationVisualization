@@ -1,0 +1,56 @@
+﻿div {
+    padding: 6px;
+    margin: 6px;
+    text-align: left;
+}
+
+.location {
+    width: 900px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+circle{
+    stroke-width: 0;
+    stroke: none;
+}
+
+text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    fill: #000000;
+    stroke: none;
+}
+text.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    fill: #000000;
+    stroke: none;
+}
+text.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    fill: #8a8a8a;
+    stroke: none;
+}
+
+text.white {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    fill: #ffffff;
+    stroke: none;
+}
