@@ -40,7 +40,7 @@ vignettes/*.pdf
 #**/RTL15/*
 **/rsconnect/*
 **/reference/*
-*.html
+#*.html
 
 # End of https://www.gitignore.io/api/r
 .Rproj.user
