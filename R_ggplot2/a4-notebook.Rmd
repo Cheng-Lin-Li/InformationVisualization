@@ -1,0 +1,285 @@
+---
+title: "Transponder flight dataset analysis of Santa Monica VOR"
+output:
+  html_notebook: default
+  html_document: default
+  word_document: default
+---
+The R Notebook published at [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
+
+The R Notebook requires below packages to be installed.
+```{r, eval=FALSE}
+install.packages('ggplot2')
+install.packages('plotly')
+install.packages('dplyr')
+install.packages("magrittr")
+devtools::install_github('hadley/ggplot2')
+```
+## Objective: 
+#### This notebook focuses on transponder flight data analysis of Santa Monica VOR(SMOVOR) which locates on the southwest edge of Santa Monica Airport (SMO).
+
+## Dataset Scope: 
+  The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
+
+  Two dates are selected in this analysis for comparisons: March 14, 2015 and December 12, 2015.
+
+## Data Wrangling:
+###1. There are total four data files in this analysis. 
+
+  a. day1_night: 00:00AM ~ 06:30AM on March 14, 2015
+  b. day1_day: 06:30AM on March 14, 2015 ~ 00:00AM on March 15, 2015
+  c. day2_night: 00:00AM ~ 06:30AM on December 12, 2015
+  d. day2_day: 06:30AM on December 12, 2015 ~ 00:00AM on December 13, 2015
+
+###2. Data cleaning process:
+
+  a. Load the data
+  b. Select the data columns we want
+  c. Transform date and time values to timestamp
+  d. Remove unuse data of columns by null
+  e. Set up the name to columns
+  f. Get valid altitude (alt), and latitude (lat)
+  g. Strip white spaces from flight name and fill in empty flight name by unique flight name associated using the flight code
+  h. Remove private plan from dataset by flight code = a60, d60, c60, c50, d20 with null flight name.
+  i. Remove duplicate row data.
+  j. Get the first data for same position (alt, lon, lat), timestamp, and flight
+  k. Add track variable on same flight on same date if the flight stay more than 1 hour, remove less than 6 records
+  l. Re-order column names
+  m. keep only altitude between 3000 and 11000 feet
+  n. Filter flights that get within 2Km from SMOVOR
+  o. Remove any row with NA
+  p. Filter correct time period and save to csv format for each data file.
+
+###3. Final dataset:
+```{r}
+df1_day <- read.csv("RTL150314_day.csv")
+str(df1_day)
+df1_day$dt <- as.POSIXct(df1_day$timestamp, tz="America/Los_Angeles")
+
+df1_night <- read.csv("RTL150314_night.csv")
+str(df1_night)
+df1_night$dt <- as.POSIXct(df1_night$timestamp, tz="America/Los_Angeles")
+
+df2_day <- read.csv("RTL151212_day.csv")
+str(df2_day)
+df2_day$dt <- as.POSIXct(df2_day$timestamp, tz="America/Los_Angeles")
+
+df2_night <- read.csv("RTL151212_night.csv")
+str(df2_night)
+df2_night$dt <- as.POSIXct(df2_night$timestamp, tz="America/Los_Angeles")
+```
+
+
+## Comparisons:
+###1. Overall trends
+
+Compare the number of flights codes in the day and night periods between two days.
+```{r}
+library(dplyr)
+library(magrittr)
+library('ggmap')
+library('plotly')
+# Count the flight numbers for each of time period
+df1_day_flights <- df1_day %>% select(code,track) %>% distinct(code, track)
+df1_day_flights[,"Date"] <- c("2015-03-14") # label the  date
+df1_day_flights[,"Class"] <- c("Day") # Classfy the day or night period
+
+df1_night_flights <- df1_night %>% select(code,track) %>% distinct(code, track)
+df1_night_flights[,"Date"] <- c("2015-03-14")
+df1_night_flights[,"Class"] <- c("Night")
+
+df2_day_flights <- df2_day  %>% select(code,track) %>% distinct(code, track)
+df2_day_flights[,"Date"] <- c("2015-12-12")
+df2_day_flights[,"Class"] <- c("Day")
+
+df2_night_flights <- df2_night %>% select(code,track) %>% distinct(code, track)
+df2_night_flights[,"Date"] <- c("2015-12-12")
+df2_night_flights[,"Class"] <- c("Night")
+
+# Check class type for each column
+#sapply(df1_day_flights, class)
+#sapply(df1_night_flights, class)
+#sapply(df2_day_flights, class)
+#sapply(df2_night_flights, class)
+
+#Turn factor into character
+df1_day_flights$code <- lapply(df1_day_flights$code, as.character)
+df1_night_flights$code <- lapply(df1_night_flights$code, as.character)
+df2_day_flights$code <- lapply(df2_day_flights$code, as.character)
+df2_night_flights$code <- lapply(df2_night_flights$code, as.character)
+
+# Bind the 4 time periods into single data frame.
+df_all <- bind_rows(df1_day_flights, df1_night_flights, df2_day_flights, df2_night_flights) 
+
+title <- "Total flights trend"
+
+# Plot the diagram
+p <- ggplot(df_all, aes(x=Date, fill = Class) ) + geom_bar() + 
+  geom_text(stat="count", aes(label=..count..), position = "stack") +
+  ggtitle(paste(title))
+ggplotly()
+```
+Figure1. The comparison of total flight counts between 14 March, 2015 and 12 Dec., 2015. 
+
+The total flights significantly increased during the period at the region of SMOVOR. The total day time flights are 40 in March, 2015 and increase to 128 in December, 2015.  The total night time flights are 2 in March, 2015 and increase to 24 in December, 2015. Total flights increase from 42 to 152 during the period.
+
+
+
+###2. Differences in pathes (latitude, longitude and altitude) over time
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+
+SMO <- data.frame(label = "SMO", lon=-118.456667, lat=34.010167)
+smo <- c(SMO$lon, SMO$lat)
+title <- "00:00AM ~ 06:30AM on March, 14, 2015"
+
+map.google <- get_map(location = smo, zoom = 10)
+p <- ggmap(map.google) +
+  geom_point(data = SMO, aes(x=lon, y=lat), color="red", size=5, alpha=.5) +
+  geom_path(data = df1_night, aes(x=lon, y=lat, color=alt), alpha=.5) +
+  scale_colour_gradient(limits=c(3000, 11000), low="orange", high="blue" ) +
+  ggtitle(paste(title))
+p
+```
+Figure 2-1. Flight pathes in the nighttime on Mar. 14, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+
+SMO <- data.frame(label = "SMO", lon=-118.456667, lat=34.010167)
+smo <- c(SMO$lon, SMO$lat)
+title <- "06:30AM on Mar. 14, 2015 ~ 00:00AM on Mar. 15, 2015"
+
+map.google <- get_map(location = smo, zoom = 10)
+p <- ggmap(map.google) +
+  geom_point(data = SMO, aes(x=lon, y=lat), color="red", size=5, alpha=.5) +
+  geom_path(data = df1_day, aes(x=lon, y=lat, color=alt), alpha=.5) +
+  scale_colour_gradient(limits=c(3000, 11000), low="red", high="green" ) +
+  ggtitle(paste(title))
+p
+```
+Figure 2-2. Flight pathes in the daytime on Mar. 14, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+
+SMO <- data.frame(label = "SMO", lon=-118.456667, lat=34.010167)
+smo <- c(SMO$lon, SMO$lat)
+title <- "00:00AM ~ 06:30AM on Dec. 12, 2015"
+
+map.google <- get_map(location = smo, zoom = 10)
+p <- ggmap(map.google) +
+  geom_point(data = SMO, aes(x=lon, y=lat), color="red", size=5, alpha=.5) +
+  geom_path(data = df2_night, aes(x=lon, y=lat, color=alt), alpha=.5) +
+  scale_colour_gradient(limits=c(3000, 11000), low="orange", high="blue" ) +
+  ggtitle(paste(title))
+p
+```
+Figure 2-3. Flight pathes in the nighttime on Dec. 12, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+
+SMO <- data.frame(label = "SMO", lon=-118.456667, lat=34.010167)
+smo <- c(SMO$lon, SMO$lat)
+title <- "06:30AM on Dec. 12, 2015 ~ 00:00AM on Dec. 13, 2015"
+
+map.google <- get_map(location = smo, zoom = 10)
+p <- ggmap(map.google) +
+  geom_point(data = SMO, aes(x=lon, y=lat), color="red", size=5, alpha=.5) +
+  geom_path(data = df2_day, aes(x=lon, y=lat, color=alt), alpha=.5) +
+  scale_colour_gradient(limits=c(3000, 11000), low="red", high="green" ) +
+  ggtitle(paste(title))
+p
+```
+Figure 2-4. Flight pathes in the daytime on Dec. 12, 2015
+
+
+
+###3. Differences in descent rate (altitude vs time)
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+title <- "00:00AM ~ 06:30AM on March, 14, 2015"
+
+p <- ggplot(df1_night, aes(x = dt, y = alt, colour = factor(substring(flight,1,3)))) +
+  geom_point(alpha = 1/3, aes(text = paste("Airline:", flight, "<br>CODE:", code))) +
+  labs(x="Date Time", y="Altitude - Miles", colour = "Airlines" ) +
+  ggtitle(paste(title)) 
+ggplotly()
+```
+Figure 3-1. Descent rate in nighttime on Mar. 14, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+title <- "06:30AM on Mar. 14, 2015 ~ 00:00AM on Mar. 15, 2015"
+
+p <- ggplot(df1_day, aes(x = dt, y = alt,  colour = factor(substring(flight,1,3)))) +
+  geom_point(alpha = 1/3) +
+  labs(x="Date Time", y="Altitude - Miles", colour = "Airlines" ) +
+  ggtitle(paste(title)) 
+ggplotly()
+```
+Figure 3-2. Descent rate in daytime on Mar. 14, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+title <- "00:00AM ~ 06:30AM on March, 14, 2015"
+
+p <- ggplot(df2_night, aes(x = dt, y = alt, colour = factor(substring(flight,1,3)))) +
+  geom_point(alpha = 1/3) +
+  labs(x="Date Time", y="Altitude - Miles", colour = "Airlines" ) +
+  ggtitle(paste(title)) 
+ggplotly()
+```
+Figure 3-3. Descent rate in nighttime on Dec. 12, 2015
+
+
+
+```{r}
+library('ggmap')
+library('ggplot2')
+library('plotly')
+title <- "06:30AM on Mar. 14, 2015 ~ 00:00AM on Mar. 15, 2015"
+
+p <- ggplot(df2_day, aes(x = dt, y = alt, color = factor(substring(flight,1,3)))) +
+  geom_point(alpha = 1/3) +
+  labs(x="Date Time", y="Altitude - Miles", colour = "Airlines" ) +
+  ggtitle(paste(title)) 
+ggplotly()
+```
+Figure 3-4. Descent rate in daytime on Dec. 12, 2015
+
+
+
+## Conclusion:
+The flight patterns significantly changed between Mar. 14, 2015 and Dec. 12, 2015. The total numbers of flights, airlines companies, density of pathes are all increased around SMOVOR according to above figures. Total flights increase from 42 to 152 which is 362% growth rate compare with these two dates.
+
+
+## Reference & Tools:
+  1. Data Source: Airplane transponder data provided in INF554 class at University of Southern California.
+  2. Data Wrangling: Source code provided by instructor, Dr. Luciano Nocera, in INF554 class at University of Southern California. 
+  3. Tools: R Core Team (2017). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
