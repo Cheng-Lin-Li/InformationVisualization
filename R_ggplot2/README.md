@@ -59,7 +59,7 @@ There are 2 approachs to read the results.
 #### 5. Key files:
 1. Data Wrangling code: [a4-data-wrangling.R ](a4-data-wrangling.R )
 2. Analysis report in R notebook: [a4-notebook.Rmd](a4-notebook.Rmd). 
-* Notice: The R notebook link will bring you to the source code of R notbook on github. The R notebook has to work with data - 4 csv files on [final dataset](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/R_ggplot2/README.md#3-final-dataset) section and install reletive packages which describs in R notebook to display the infographic.)
+* Notice: The R notebook link will bring you to the source code of R notbook on github. The R notebook has to work with data - 4 csv files on [final dataset](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/R_ggplot2/README.md#3-final-dataset) section and install reletive packages which describes in R notebook to display the infographic.)
 
 ## Reference & Tools:
   1. Data Source: Airplane transponder data provided in INF554 class at University of Southern California.
