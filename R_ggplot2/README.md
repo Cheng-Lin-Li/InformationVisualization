@@ -40,7 +40,7 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
   o. Remove any row with NA
   p. Filter correct time period and save to csv format for each data file.
 ```
-### 3. Final dataset:{#Final dataset}
+### 3. Final dataset:
 
   a. [day1_night: 00:00AM ~ 06:30AM on March 14, 2015](RTL150314_day.csv)
 
@@ -53,13 +53,13 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
 ### 4. Analysis:
 There are 2 approachs to read the results.
 
-1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) ,or 
+1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) (* Highly recommand) ,or 
 2. Download the [html file](a4-notebook.nb.html), or 
 
 #### 5. Key files:
 1. Data Wrangling code: [a4-data-wrangling.R ](a4-data-wrangling.R )
 2. Analysis report in R notebook: [a4-notebook.Rmd](a4-notebook.Rmd). 
-* Notice: The R notebook has to work with data (4 csv files in "[final dataset](#Final dataset)" section) and install reletive packages which describs in R notebook.)
+* Notice: The R notebook link will bring you to the source code of R notbook on github. The R notebook has to work with data (4 csv files in "[final dataset](#3. Final dataset:)" section) and install reletive packages which describs in R notebook to display the infographic.)
 
 ## Reference & Tools:
   1. Data Source: Airplane transponder data provided in INF554 class at University of Southern California.
