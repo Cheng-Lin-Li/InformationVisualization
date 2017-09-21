@@ -1,5 +1,7 @@
-# R and ggplot2 for transponder flight data analysis of Santa Monica VOR(SMOVOR)
-You can read the final report on R notebook format, please follow below URL.
+
+# R and ggplot2 
+### Transponder flight data analysis of Santa Monica VOR(SMOVOR)
+Please read the report on R notebook format.
 
 ## R Notebook URL:
 The R Notebook published at [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
