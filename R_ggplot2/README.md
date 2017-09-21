@@ -1,7 +1,6 @@
-
 # R and ggplot2 
 ### Transponder flight data analysis of Santa Monica VOR(SMOVOR)
-Please read the report on R notebook which is published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
+Please read the report on R notebook 'a4-notebook.Rmd', which is published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 
 ## R Notebook URL:
 The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
@@ -50,7 +49,14 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
   c. [day2_night: 00:00AM ~ 06:30AM on December 12, 2015](RTL151212_day.csv)
 
   d. [day2_day: 06:30AM on December 12, 2015 ~ 00:00AM on December 13, 2015](RTL151212_night.csv)
-  
+
+### 4. Analysis:
+There are 3 approachs to read the results.
+
+1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) ,or 
+2. Download the [html file](a4-notebook.rmd), or 
+3. Download the R notebook, [a4-notebook.Rmd](a4-notebook.Rmd).
+
 ## Reference & Tools:
   1. Data Source: Airplane transponder data provided in INF554 class at University of Southern California.
   2. Data Wrangling: Source code provided by instructor, Dr. Luciano Nocera, in INF554 class at University of Southern California. 
