@@ -1,13 +1,13 @@
 # Information Visualization
 This is my works on Information Visualization which includes:
 
-## Google sheets with Charts and publish with HTML
+## 1. Google sheets with Charts and publish with HTML
 * The Topic: Economic Growth and CO2 Emissions. 
 > Is it the price of gross domestic product (GDP) growth?  Total 10 countries are selected to be comparison.
 >
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/GoogleSheets) to explore the results.
 
-## Scalable Vector Graphics (SVG) Drawing practice for Bubble chart
+## 2. Scalable Vector Graphics (SVG) Drawing practice for Bubble chart
 * The Topic: CO2 Emissions per GDP. 
 > Create and publish a bubble cloud in three different ways. Use node.js and browsersync to develop and explain how to start the web server.
 > Create three bubble charts in one HTML document:
@@ -16,3 +16,11 @@ This is my works on Information Visualization which includes:
 > * Dynamic SVG: recreate the same bubble cloud using JavaScript (i.e., dynamically generating the SVG). Use a chart.js file.
 >
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
+
+## 3. Scalable Vector Graphics (SVG) Drawing practice for Bubble chart
+* The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and ploty packages.
+>The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
+>
+> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) to explore the results.
+> Or to read the final report on the R Notebook which published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
+>
