@@ -51,11 +51,15 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
   d. [day2_day: 06:30AM on December 12, 2015 ~ 00:00AM on December 13, 2015](RTL151212_night.csv)
 
 ### 4. Analysis:
-There are 3 approachs to read the results.
+There are 2 approachs to read the results.
 
 1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) ,or 
 2. Download the [html file](a4-notebook.nb.html), or 
-3. Download the R notebook, [a4-notebook.Rmd](a4-notebook.Rmd).
+
+#### 5. Key files:
+1. Data Wrangling code: [a4-data-wrangling.R ](a4-data-wrangling.R )
+2. Analysis report in R notebook: [a4-notebook.Rmd](a4-notebook.Rmd). 
+* Notice: The R notebook has to work with data (4 csv files in "[final dataset](### 3. Final dataset:)" section) and install reletive packages.)
 
 ## Reference & Tools:
   1. Data Source: Airplane transponder data provided in INF554 class at University of Southern California.
