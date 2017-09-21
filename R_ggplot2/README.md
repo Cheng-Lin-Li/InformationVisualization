@@ -53,8 +53,8 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
 ### 4. Analysis:
 There are 2 approachs to read the results.
 
-1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) (* Highly recommand) ,or 
-2. Download the [html file](a4-notebook.nb.html), or 
+1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) (* Highly recommand)
+2. Download the [html file](a4-notebook.nb.html)
 
 #### 5. Key files:
 1. Data Wrangling code: [a4-data-wrangling.R ](a4-data-wrangling.R )
