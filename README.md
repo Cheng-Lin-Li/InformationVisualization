@@ -17,8 +17,8 @@ This is my works on Information Visualization which includes:
 >
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
 
-## 3. Scalable Vector Graphics (SVG) Drawing practice for Bubble chart
-* The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and ploty packages.
+## 3. R language with ggplot 2 and plotly packages.
+* The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and plotly packages.
 >The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
 >
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) to explore the results.
