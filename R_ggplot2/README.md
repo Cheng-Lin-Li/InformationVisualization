@@ -1,4 +1,4 @@
-# R and ggplot2 
+# R with ggplot2 and plotly packages
 ### Transponder flight data analysis of Santa Monica VOR(SMOVOR)
 Please read the report on R notebook 'a4-notebook.Rmd', which is published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 
