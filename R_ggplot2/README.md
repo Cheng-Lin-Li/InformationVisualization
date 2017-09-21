@@ -1,7 +1,10 @@
-# INF 554 Assignment 4
+
+# R and ggplot2 
+### Transponder flight data analysis of Santa Monica VOR(SMOVOR)
+Please read the report on R notebook which is published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 
 ## R Notebook URL:
-The R Notebook published at [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
+The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 
 ## Objective: 
 #### This notebook focuses on transponder flight data analysis of Santa Monica VOR(SMOVOR) which locates on the southwest edge of Santa Monica Airport (SMO).
