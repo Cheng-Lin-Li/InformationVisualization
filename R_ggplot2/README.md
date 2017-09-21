@@ -54,7 +54,7 @@ The R Notebook published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552
 There are 3 approachs to read the results.
 
 1. Please read it online on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552) ,or 
-2. Download the [html file](a4-notebook.rmd), or 
+2. Download the [html file](a4-notebook.nb.html), or 
 3. Download the R notebook, [a4-notebook.Rmd](a4-notebook.Rmd).
 
 ## Reference & Tools:
