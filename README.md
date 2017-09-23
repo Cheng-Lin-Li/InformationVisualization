@@ -5,7 +5,7 @@ This is my works on Information Visualization which includes:
 * The Topic: Economic Growth and CO2 Emissions. 
 > Is it the price of gross domestic product (GDP) growth?  Total 10 countries are selected to be comparison.
 >
-> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/GoogleSheets) to explore the results.
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/GoogleSheets) ** to explore the results.
 
 ## 2. Scalable Vector Graphics (SVG) Drawing practice for Bubble chart
 * The Topic: CO2 Emissions per GDP. 
@@ -15,7 +15,7 @@ This is my works on Information Visualization which includes:
 > * SVG Code: manually recreate the same bubble cloud by writing SVG code in index.html (i.e., writing SVG yourself, not re-using the SVG created by Inkscape!). Use a style.css file.
 > * Dynamic SVG: recreate the same bubble cloud using JavaScript (i.e., dynamically generating the SVG). Use a chart.js file.
 >
-> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) ** to explore the results.
 
 ## 3. Inforgraphics analyze by Visualization Wheels.
 * The Subject: Global Carbon Budget.
@@ -23,13 +23,13 @@ This is my works on Information Visualization which includes:
 >
 > Compare these two infographics by visualization wheels to analysis Pros and Cons, suggest improvements for the things they do poorly.
 >
-> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) to explore the results.
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) ** to explore the results.
 >
 
 ## 4. R language with ggplot 2 and plotly packages.
 * The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and plotly packages.
 >The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
 >
-> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) to explore the results.
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) ** to explore the results.
 > Or to read the final report on the R Notebook which published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 >
