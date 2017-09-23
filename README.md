@@ -17,7 +17,13 @@ This is my works on Information Visualization which includes:
 >
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
 
-## 3. R language with ggplot 2 and plotly packages.
+## 3. Inforgraphics analyze by Visualization Wheels.
+* The Topic: Global Carbon Budget.
+>The scope of the analysis is to compare two infographics which describe the same topic, Global Carbon Budget, but different approach. Leverage visualization wheels to analysis these two inforgraphics with Pros and Cons with my suggestions.
+> Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) to explore the results.
+>
+
+## 4. R language with ggplot 2 and plotly packages.
 * The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and plotly packages.
 >The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
 >
