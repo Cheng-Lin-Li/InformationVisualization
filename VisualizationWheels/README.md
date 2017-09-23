@@ -1,4 +1,4 @@
-# INF 554 Assignment 3
+# Infographics analyze by Visualization Wheels 
 
 ## Subject: Global Carbon Budget
 
