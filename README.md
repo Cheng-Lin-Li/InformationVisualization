@@ -18,8 +18,11 @@ This is my works on Information Visualization which includes:
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
 
 ## 3. Inforgraphics analyze by Visualization Wheels.
-* The Topic: Global Carbon Budget.
->The scope of the analysis is to compare two infographics which describe the same topic, Global Carbon Budget, but different approach. Leverage visualization wheels to analysis these two inforgraphics with Pros and Cons with my suggestions.
+* The Subject: Global Carbon Budget.
+> Find 2 different infographics on the same subject, Global Carbon Budget, by different approaches. 
+>
+> Compare these two infographics by visualization wheels to analysis Pros and Cons, suggest improvements for the things they do poorly.
+>
 > Click [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) to explore the results.
 >
 
