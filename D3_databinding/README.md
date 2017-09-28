@@ -4,7 +4,7 @@
 
 * [The html result](http://www-scf.usc.edu/~chenglil/v1.1/a5.html) 
 
-If the website can not access, please download all contents under this folder to view it on your local machine.
+If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
 ## HTML, Javascript, and CSS:
 * [The html file](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/a5.html)
