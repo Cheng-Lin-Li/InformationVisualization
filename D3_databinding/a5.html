@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8" />
+        <title>Rural population (% of total population) rate comparison between 20 countries</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="data_table.js"></script>
+        <script src="stem_n_leaf.js"></script>
+        <script src="bar_chart.js"></script> 
+        <script src="scatterplot.js"></script>       
+</head>
+
+<body>
+<script>
+    var database;
+    const table_landmark = 'F1'
+    const stem_n_leaf_landmark = 'F2'
+    const bar_chart_landmark = 'F3'
+    const scatterplot_landmark = 'F4'
+    d3.csv("rural-populations.csv", function(error, data) {
+        if (error) throw error;
+        database = data;
+        console.log(data.columns); // ["Country Name", "Country Code", "Model", "Length"]
+        
+        data_table = new data_table(table_landmark, data, 'data_table')
+        data_table.print();
+
+        stem_n_leaf = new  stem_n_leaf(stem_n_leaf_landmark, database, 'stem_n_leaf');
+        stem_n_leaf.plot();
+
+        bar_chart = new bar_chart(bar_chart_landmark, database);
+        bar_chart.plot();
+
+        scatterplot = new scatterplot(scatterplot_landmark, database);
+        scatterplot.plot();        
+
+    });
+
+
+
+</script>
+<p><h2>Data Table for Year 2016:</h2></p>
+<div align="center" id="F1"></div>
+<hr>
+
+<p><h2>Stem and Leaf Diagram:</h2></p>
+<p>The decimal point is 1 digit to the right of the |</p>
+<div align="center" id="F2"></div>
+<hr>
+
+<p><h2>Bar Chart:</h2></p>
+<p>Rural population (% of total population) rate comparison between 20 countries</p>
+<div align="center" id="F3"></div>
+<hr>
+
+<p><h2>ScatterPlot Diagram:</h2></p>
+<p>Rural population (% of total population) rate comparison between 20 countries</p>
+<div align="center" id="F4"></div>
+
+
+<p><h2>Data Source:</h2></p>
+<ol>
+    <li>Rural population (% of total population) data for 20 countries in 2016 - <a href="https://data.worldbank.org/indicator/SP.RUR.TOTL.ZS">Rural population (% of total population) data</a> by <a href="http://www.worldbank.org/">THE WORLD BANK</a></li>
+</ol>
+
+</body>
+</html>

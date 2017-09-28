@@ -1,0 +1,16 @@
+﻿table {
+    border-collapse: collapse;
+}
+th, tr, td {
+    padding:5px;
+}
+.data_table {
+    text-align: center;
+}
+.data_table td, .data_table th {
+    border: 2px solid #484848;
+}
+.stem_n_leaf td:first-child {
+    border-right: 2px solid #484848;
+    text-align: right;
+}
