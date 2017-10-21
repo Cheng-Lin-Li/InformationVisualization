@@ -7,15 +7,15 @@
 If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
 ## HTML, Javascript, and CSS:
-* [The html file](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/a5.html)
+* [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding/blob/master/a5.html)
 
-* [The Javascript of table](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/data_table.js)
+* [The Javascript of table](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding/blob/master/data_table.js)
 
-* [The Javascript of stem-and-leaf diagram](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/stem_n_leaf.js)
+* [The Javascript of stem-and-leaf diagram](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding/blob/master/stem_n_leaf.js)
 
-* [The Javascript of bar chart](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/bar_chart.js)
+* [The Javascript of bar chart](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding/blob/master/bar_chart.js)
 
-* [The Javascript of scatterplot](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/scatterplot.js)
+* [The Javascript of scatterplot](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding/blob/master/scatterplot.js)
 
 * [The css file](https://github.com/INF554Fall17/a5-Cheng-Lin-Li/blob/master/css/style.css)
 
