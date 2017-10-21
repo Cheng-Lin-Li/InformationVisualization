@@ -1,0 +1,14 @@
+﻿.bar:hover {
+    fill: red;
+}
+.xaxis .yaxis line {
+    fill: none;
+    stroke: black;
+    image-rendering: crispEdges;
+}
+
+.xaxis .yaxis text {
+    font-family: Consolas;
+    font-size: 10px;
+}
+text.country_label {font-size: 10px; font-style: "sans-serif";}
