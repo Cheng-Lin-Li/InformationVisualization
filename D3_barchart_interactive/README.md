@@ -8,17 +8,17 @@ Implement smooth transitions based on user input to filter (show all data, show 
 
 ## Published HTML:
 
-Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a8/a8.html) to view HTML file.
+Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a8/a8.html) to view HTML file. If the website not available, please follow the deployment procedure to view the result.
 
 
 ## HTML, Javascript, and CSS:
-* [The html file](https://github.com/INF554Fall17/a8-Cheng-Lin-Li/blob/master/a8.html)
+* [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_barchart_interactive/a8.html)
 
-* [The Javascript of bar chart](https://github.com/INF554Fall17/a8-Cheng-Lin-Li/blob/master/bar_chart.js)
+* [The Javascript of bar chart](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_barchart_interactive/bar_chart.js)
 
-* [The css file](https://github.com/INF554Fall17/a8-Cheng-Lin-Li/blob/master/style.css)
+* [The css file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_barchart_interactive/style.css)
 
-* [The data file](https://github.com/INF554Fall17/a8-Cheng-Lin-Li/blob/master/a8.json)
+* [The data file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_barchart_interactive/a8.json)
 
 ### Deployment
 > * Make sure you have an internet connection.
