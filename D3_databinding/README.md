@@ -9,11 +9,11 @@ If the website can not be accessed, please download all contents under this fold
 ## HTML, Javascript, and CSS:
 * [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/a5.html)
 
-* [The Javascript of table]https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/data_table.js)
+* [The Javascript of table](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/data_table.js)
 
-* [The Javascript of stem-and-leaf diagram]https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/stem_n_leaf.js)
+* [The Javascript of stem-and-leaf diagram](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/stem_n_leaf.js)
 
-* [The Javascript of bar chart]https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/bar_chart.js)
+* [The Javascript of bar chart](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/bar_chart.js)
 
 * [The Javascript of scatterplot](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/scatterplot.js)
 
