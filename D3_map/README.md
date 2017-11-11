@@ -8,17 +8,17 @@ Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a9/a9.html) to view HTML fil
 
 
 ## HTML, Javascript, and CSS:
-* [The html file](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/a9.html)
+* [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/a9.html)
 
-* [The Javascript of proportional symbol map](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/proportional_symbol.js)
+* [The Javascript of proportional symbol map]https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/proportional_symbol.js)
 
-* [The Javascript of choropleth map](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/choropleth.js)
+* [The Javascript of choropleth map](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/choropleth.js)
 
-* [The css file](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/style.css)
+* [The css file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/style.css)
 
-* [The data file](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/a9.json)
+* [The data file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/a9.json)
 
-* [The map data file](https://github.com/INF554Fall17/a9-Cheng-Lin-Li/blob/master/world-110m.json)
+* [The map data file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/world-110m.json)
 
 ### Deployment
 > * Make sure you have an internet connection.
