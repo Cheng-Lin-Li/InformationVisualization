@@ -10,7 +10,7 @@ Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a9/a9.html) to view HTML fil
 ## HTML, Javascript, and CSS:
 * [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/a9.html)
 
-* [The Javascript of proportional symbol map]https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/proportional_symbol.js)
+* [The Javascript of proportional symbol map](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/proportional_symbol.js)
 
 * [The Javascript of choropleth map](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_map/choropleth.js)
 
