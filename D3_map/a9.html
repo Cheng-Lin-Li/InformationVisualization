@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8" />
+        <title> GDP between 10 countries</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>   
+        <script src="https://d3js.org/topojson.v2.min.js"></script>  
+        <script src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>        
+        <script src="proportional_symbol.js"></script>               
+        <script src="choropleth.js"></script>  
+</head>
+
+<body onload="">
+<script>
+    var database;
+    const proportional_symbol_landmark = 'F1'
+    const Choropleth_landmark = 'F2'    
+    const Year = 2015;
+    const ID = 'ID';
+    const X_label = 'Country';
+    const Y_label = 'GDP';
+    const map_file = 'world-110m.json';
+    const data_file = 'a9.json';
+    d3.json(data_file, 
+        function(error, data) {
+            if (error) throw error;
+            console.log(data);
+            
+            // sort dataset by Country column
+            var dataset = data.sort(function(a, b){
+                var keyA = a[X_label],
+                    keyB = b[X_label];
+                // Compare the 2 dates
+                if(keyA < keyB) return -1;
+                if(keyA > keyB) return 1;
+                return 0;
+            }); 
+
+            // Get 2015 data for chart
+            var _dataset = dataset.reduce(function (obj, item) {
+                if (item['Year'] == Year) {                 
+                    obj.push(item);
+                    return obj;
+                }
+                else{ return obj;}
+            }, []);
+
+            // // Get 2015 data for chart
+            // var data_obj = dataset.reduce(function (obj, item) {
+            //     if (item['Year'] == Year) {
+            //         obj[item[X_label]] = obj[item[X_label]] || 0;
+            //         obj[item[X_label]]=(item[Y_label]);       
+            //         return obj;
+            //     }
+            //     else{ return obj;}
+            // }, {});
+            // // combine x and y values into groupby column
+            // // _dataset = [{'Country':China, 'GDP':y2-1}, {'Country':C2, 'GDP':y2-2}, ..., {}]
+            // var _dataset = Object.keys(data_obj).map(function (key) {
+            //     return {'Country': key, 'GDP': data_obj[key]};
+            // });
+
+            // plot Proportional Symbol map
+            proportional_symbol_map = new proportional_symbol(proportional_symbol_landmark, _dataset, X_label, Y_label, ID, map_file);
+            proportional_symbol_map.plot();  
+            
+             // plot Choropleth map
+            choropleth_map = new choropleth(Choropleth_landmark, _dataset, X_label, Y_label, ID, map_file);
+            choropleth_map.plot();             
+
+    });
+
+
+
+</script>
+<p><h2>Proportional Symbol Map:</h2></p>
+<div align="center" id="F1">
+    <div>            
+    </div>      
+    <p><h3>GDP between 10 countries for year 2015</h3></p>
+</div>
+<p><h2>Choropleth Map:</h2></p>
+<div align="center" id="F2">
+    <div>            
+    </div>      
+    <p><h3>GDP between 10 countries for year 2015</h3></p>
+</div>
+<p><h2>Data Source:</h2></p>
+<ol>
+    <li><a href="http://data.un.org/Data.aspx?d=SNAAMA&f=grID%3a101%3bcurrID%3aUSD%3bpcFlag%3a0%3bitID%3a9">Gross Domastic Product </a> by United Nations Statistics Division</a> - <a href="https://unstats.un.org/home/">National Accounts Estimates of Main Aggregates</a></li>
+</ol>
+
+</body>
+</html>
+<!-- browser-sync start --server --files "*.*" --index a9.html -->

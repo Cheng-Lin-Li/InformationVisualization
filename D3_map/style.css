@@ -1,0 +1,43 @@
+﻿.land {  
+    fill: #ddd;
+}
+.countries {
+    stroke: #ddd;
+}
+.border {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.bubble {
+    fill: brown;
+    fill-opacity: .5;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.bubble :hover {
+    stroke: #000;
+}
+.land :hover {  
+    stroke: #ddd;
+}
+.border :hover {
+    stroke: #000;
+}
+.countries :hover {
+    stroke: #bbb;
+}
+
+.legend circle {
+    fill: none;
+    stroke: #ccc;
+}
+
+.legend text {
+    fill: #777;
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+.caption {font-size: 10px; font-style: "sans-serif";}
