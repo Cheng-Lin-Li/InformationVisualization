@@ -49,3 +49,10 @@ This is my works on Information Visualization which includes:
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 >
+## 7. D3 Proportional Symbol Map and Choropleth Map - with world map
+* The Topic: Present Top 10 GDP countries in 2015 by Proportional Symbol World Map and Choropleth World Map.
+>
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_map) ** to explore the results.
+> Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/a9/a9.html)
+>
+> If the website can not be accessed, please download all contents under this folder to view it on your local machine.
