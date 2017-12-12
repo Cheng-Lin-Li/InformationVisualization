@@ -4,7 +4,7 @@ Using the GDP of 10 countries  (year 2015 & 10 countries) to build a proportiona
 
 ## Published HTML:
 
-Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a9/a9.html) to view HTML file.
+Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a9/a9.html) to view HTML file.  If the website not available, please follow the deployment procedure to view the result.
 
 
 ## HTML, Javascript, and CSS:
