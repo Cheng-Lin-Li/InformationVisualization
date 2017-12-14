@@ -32,7 +32,8 @@ This is my works on Information Visualization which includes:
 >
 > Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) ** to explore the results.
 > Or to read the final report on the R Notebook which published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
->
+
+
 ## 5. D3 with data binding
 * The Topic: Present Rural population (% of total population) data for 20 countries in 2016 by a stem-and-leaf plot, a bar chart, and a scatterplot.
 >
@@ -40,7 +41,8 @@ This is my works on Information Visualization which includes:
 > Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/v1.1/a5.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
->
+
+
 ## 6. D3 Interactive Bar Chart - with sorting functions by Transition and data binding
 * The Topic: Present Top 10 GDP countries in 2015 by a bar chart with sorting function to present D3 transition and data binding techniques.
 >
@@ -48,11 +50,21 @@ This is my works on Information Visualization which includes:
 > Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/a8/a8.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
->
+
+
 ## 7. D3 Proportional Symbol Map and Choropleth Map - with world map
 * The Topic: Present Top 10 GDP countries in 2015 by Proportional Symbol World Map and Choropleth World Map.
 >
 > Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_map) ** to explore the results.
 > Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/a9/a9.html)
+>
+> If the website can not be accessed, please download all contents under this folder to view it on your local machine.
+
+## 8. Project - Business Cycle Introduction
+### D3 donut chart, line chart, stream chart, Choropleth world map and heat chart
+* The Topic: Develop an application website to introduce Business Cycle.
+>
+> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle) ** to explore the results.
+> Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/business_cycle/index.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
