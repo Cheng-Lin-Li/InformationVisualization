@@ -13,7 +13,7 @@ I implemented donut chart, theory line chart and build the application architect
 The paper online version is located on [Overleaf platform](https://www.overleaf.com/12431930jpndjmjrvgbh), a pdf version can be accessed via [this link.](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/BusinessCycle/Paper/business-cycle.pdf)
 ## Video
 
-The demo video can be accessed via [this link.](https://youtube.com/)
+The demo video can be accessed via [this link.](https://www.youtube.com/watch?v=nMmFjM_RaqQ&feature=youtu.be)
 
 ## Demo
 
