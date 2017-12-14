@@ -24,11 +24,12 @@ $ npm install --save d3-geo-projection
 $ npm install --save d3-scale-chromatic
 $ npm install --save-dev @types/d3 
 $ npm install --save-dev @types/topojson
-**$ npm install d3-tip
-**$ npm install --save @types/d3-tip
-**$ npm install --save d3-simple-slider
+$ npm install d3-tip
+$ npm install --save @types/d3-tip
+$ npm install --save d3-simple-slider
 
-**3-1. Pull all project files from git to your local folder
+
+3-1. Pull all project files from git to your local folder
 
 4. Configuring Project to support Bootstrap
 Now that the project is set up it must be configured to include the bootstrap CSS.

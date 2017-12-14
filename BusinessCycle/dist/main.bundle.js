@@ -47,7 +47,7 @@ module.exports = "<!DOCTYPE html>\r\n<!--The content below is only a placeholder
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -64,15 +64,15 @@ var AppComponent = (function () {
         this.title4 = 'World Wide Economic Trend';
         this.title5 = 'G20 Countries MSCI Trend';
     }
-    AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-root',
-            template: __webpack_require__("../../../../../src/app/app.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/app.component.css")]
-        })
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-root',
+        template: __webpack_require__("../../../../../src/app/app.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+    })
+], AppComponent);
 
 //# sourceMappingURL=app.component.js.map
 
@@ -83,8 +83,8 @@ var AppComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theory_chart_theory_chart_component__ = __webpack_require__("../../../../../src/app/theory-chart/theory-chart.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__line_chart_line_chart_component__ = __webpack_require__("../../../../../src/app/line-chart/line-chart.component.ts");
@@ -110,26 +110,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__theory_chart_theory_chart_component__["a" /* TheoryChartComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__line_chart_line_chart_component__["a" /* LineChartComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__bar_chart_bar_chart_component__["a" /* BarChartComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__world_map_world_map_component__["a" /* WorldMapComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__heat_map_heat_map_component__["a" /* HeatMapComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__donut_chart_donut_chart_component__["a" /* DonutChartComponent */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */]
-            ],
-            providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
-        })
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_3__theory_chart_theory_chart_component__["a" /* TheoryChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_4__line_chart_line_chart_component__["a" /* LineChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__bar_chart_bar_chart_component__["a" /* BarChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__world_map_world_map_component__["a" /* WorldMapComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__heat_map_heat_map_component__["a" /* HeatMapComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__donut_chart_donut_chart_component__["a" /* DonutChartComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */]
+        ],
+        providers: [],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
+    })
+], AppModule);
 
 //# sourceMappingURL=app.module.js.map
 
@@ -165,7 +165,7 @@ module.exports = "\r\n  <div id=\"bar-chart\"></div>\r\n  <svg id=\"bar-chart-sv
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BarChartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pie_chart_js__ = __webpack_require__("../../../../../src/app/bar-chart/pie-chart.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -419,16 +419,16 @@ var BarChartComponent = (function () {
         
         */
     };
-    BarChartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-bar-chart',
-            template: __webpack_require__("../../../../../src/app/bar-chart/bar-chart.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/bar-chart/bar-chart.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], BarChartComponent);
     return BarChartComponent;
 }());
+BarChartComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-bar-chart',
+        template: __webpack_require__("../../../../../src/app/bar-chart/bar-chart.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/bar-chart/bar-chart.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], BarChartComponent);
 
 //# sourceMappingURL=bar-chart.component.js.map
 
@@ -840,7 +840,7 @@ module.exports = "<!DOCTYPE html>\r\n"
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DonutChartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__donut_chart__ = __webpack_require__("../../../../../src/app/donut-chart/donut-chart.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -859,21 +859,21 @@ var DonutChartComponent = (function () {
     DonutChartComponent.prototype.ngOnInit = function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__donut_chart__["a" /* donut_chart_plot */])(+this.eventcase);
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */])(),
-        __metadata("design:type", Object)
-    ], DonutChartComponent.prototype, "eventcase", void 0);
-    DonutChartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-donut-chart',
-            //  template: '<div class="donut{{eventcase}}"></div>', //D3 cannot get this <div>  
-            template: __webpack_require__("../../../../../src/app/donut-chart/donut-chart.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/donut-chart/donut-chart.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], DonutChartComponent);
     return DonutChartComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Object)
+], DonutChartComponent.prototype, "eventcase", void 0);
+DonutChartComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-donut-chart',
+        //  template: '<div class="donut{{eventcase}}"></div>', //D3 cannot get this <div>  
+        template: __webpack_require__("../../../../../src/app/donut-chart/donut-chart.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/donut-chart/donut-chart.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], DonutChartComponent);
 
 // 
 // reference 
@@ -1446,7 +1446,7 @@ module.exports = "<!-- <span id=\"reset\" style=\"background-color:yellow; paddi
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeatMapComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__function_js__ = __webpack_require__("../../../../../src/app/heat-map/function.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1466,16 +1466,16 @@ var HeatMapComponent = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__function_js__["a" /* plot */])();
         // window.onresize = plot;
     };
-    HeatMapComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-heat-map',
-            template: __webpack_require__("../../../../../src/app/heat-map/heat-map.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/heat-map/heat-map.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], HeatMapComponent);
     return HeatMapComponent;
 }());
+HeatMapComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-heat-map',
+        template: __webpack_require__("../../../../../src/app/heat-map/heat-map.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/heat-map/heat-map.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], HeatMapComponent);
 
 //# sourceMappingURL=heat-map.component.js.map
 
@@ -1823,7 +1823,7 @@ module.exports = "\r\n<div id=\"line-chart\"></div>\r\n<svg id=\"line-chart-svg\
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LineChartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__line_chart_js__ = __webpack_require__("../../../../../src/app/line-chart/line-chart.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1842,16 +1842,16 @@ var LineChartComponent = (function () {
     LineChartComponent.prototype.ngOnInit = function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__line_chart_js__["a" /* plotLine */])();
     };
-    LineChartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-line-chart',
-            template: __webpack_require__("../../../../../src/app/line-chart/line-chart.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/line-chart/line-chart.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], LineChartComponent);
     return LineChartComponent;
 }());
+LineChartComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-line-chart',
+        template: __webpack_require__("../../../../../src/app/line-chart/line-chart.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/line-chart/line-chart.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], LineChartComponent);
 
 //# sourceMappingURL=line-chart.component.js.map
 
@@ -2257,7 +2257,7 @@ module.exports = "\r\n<!DOCTYPE html>\r\n<svg id=\"theory-chart-svg\" ></svg>\t\
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheoryChartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theory_chart__ = __webpack_require__("../../../../../src/app/theory-chart/theory-chart.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2276,16 +2276,16 @@ var TheoryChartComponent = (function () {
     TheoryChartComponent.prototype.ngOnInit = function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__theory_chart__["a" /* theory_chart_plot */])();
     };
-    TheoryChartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-theory-chart',
-            template: __webpack_require__("../../../../../src/app/theory-chart/theory-chart.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/theory-chart/theory-chart.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], TheoryChartComponent);
     return TheoryChartComponent;
 }());
+TheoryChartComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-theory-chart',
+        template: __webpack_require__("../../../../../src/app/theory-chart/theory-chart.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/theory-chart/theory-chart.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], TheoryChartComponent);
 
 // https://codepen.io/sonofjack/pen/BQGpLV
 // https://bocoup.com/blog/improving-d3-path-animation
@@ -3469,7 +3469,7 @@ module.exports = "<div id=\"world-map\"></div>\r\n<div id=\"map-barchart\"></div
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WorldMapComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__functions_js__ = __webpack_require__("../../../../../src/app/world-map/functions.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3489,16 +3489,16 @@ var WorldMapComponent = (function () {
     WorldMapComponent.prototype.ngOnInit = function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__functions_js__["a" /* plotMap */])();
     };
-    WorldMapComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-world-map',
-            template: __webpack_require__("../../../../../src/app/world-map/world-map.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/world-map/world-map.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], WorldMapComponent);
     return WorldMapComponent;
 }());
+WorldMapComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'app-world-map',
+        template: __webpack_require__("../../../../../src/app/world-map/world-map.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/world-map/world-map.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], WorldMapComponent);
 
 //# sourceMappingURL=world-map.component.js.map
 
@@ -3513,6 +3513,7 @@ var WorldMapComponent = (function () {
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false
 };
@@ -3525,8 +3526,8 @@ var environment = {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 
@@ -3534,7 +3535,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
