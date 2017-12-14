@@ -21,7 +21,13 @@ The application website can be accessed via [this link.](http://www-scf.usc.edu/
 
 ## Deployment
 
-This application website can be deployed into a webserver. Please copy all material which locate in [this folder.](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle/dist) into a webserver. Click the index.html as the homepage. Alternative approach is download the folder into your local PC, click the index.html page via firefox or Microsoft Edge. Google Chrome cannot execute this application due to cross origin requests for data file access security restrictions. (or add parameter "--allow-file-access-from-files" i.e."chrome.exe --allow-file-access-from-files" to grant the access.)
+This application website can be deployed into a webserver. Please copy all material which locate in [this folder.](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle/dist) into a webserver. Click the index.html as the homepage. 
+
+Alternative approach is download the folder into your local PC, click the index.html page via firefox or Microsoft Edge. Google Chrome cannot execute this application due to cross origin requests for data file access security restrictions. Or you can add parameter "--allow-file-access-from-files" when you execute chrome. For example: 
+```text
+chrome.exe --allow-file-access-from-files
+```
+to grant the access.
 
 ## Presentation
 
