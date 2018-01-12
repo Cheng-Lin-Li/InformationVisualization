@@ -1,6 +1,6 @@
 # BusinessCycle
-
-This project was generated based on [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+This project builds up a web application to introduce what business cycle is and how it will impact to us. We may also use this visualization to predict the economic trend of the future.
+The project was generated based on [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Technology
 
