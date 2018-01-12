@@ -61,8 +61,9 @@ This is my works on Information Visualization which includes:
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
 ## 8. Project - Business Cycle Introduction
+## Build up a web application to introduce what business cycle is and how it will impact to us.
 ### - includes D3 donut chart, line chart, stream chart, Choropleth world map and heat map.
-* This project leverages Angular v4 as application framework and Bootstrap v4 for responsive design. I worked with my teammates, Yucheng Guo and Sovan Rath to develop. This project includes D3 donut chart, line charts, stream chart, choropleth world map and heat map to introduce business cycle and its impact.
+* This project leverages Angular v4 as application framework and Bootstrap v4 for responsive design. I worked with my teammates, Yucheng Guo and Sovan Rath to develop. This project includes D3 donut chart, line charts, stream chart, choropleth world map and heat map to introduce business cycle and its impact. We may also use this visualization to predict the economic trend of the future. 
 
 * I implemented donut chart, theory line chart and build the application architecture which integrated our application components into Angular framework with Bootstrap template.
 
