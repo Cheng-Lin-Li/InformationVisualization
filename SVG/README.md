@@ -7,16 +7,18 @@ Create three bubble charts in one HTML document:
 * **SVG Code**: manually recreate the same bubble cloud by writing SVG code in `index.html` (i.e., writing SVG yourself, not re-using the SVG created by Inkscape!). Use a `style.css` file.
 * **Dynamic SVG**: recreate the same bubble cloud using JavaScript (i.e., dynamically generating the SVG). Use a `chart.js` file.
 
+## Result Presentation:
+[Read the result html page](https://cheng-lin-li.github.io/InformationVisualization/SVG/)
 
-## SVG prototype:
+## SVG prototype source code:
 [The SVG prototype file](https://github.com/INF554Fall17/a2-Cheng-Lin-Li/blob/master/prototype.svg?short_path=a9581bf)
 
-## HTML & css:
+## HTML & css source code:
 [The html file](https://github.com/INF554Fall17/a2-Cheng-Lin-Li/blob/master/index.html)
 
 [The css file](https://github.com/INF554Fall17/a2-Cheng-Lin-Li/blob/master/css/style.css)
 
-## Javascript:
+## Javascript source code:
 [The javascript file](https://github.com/INF554Fall17/a2-Cheng-Lin-Li/blob/master/js/chart.js)
 
 ## Node.js and browsersync usage
