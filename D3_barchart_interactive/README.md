@@ -8,7 +8,7 @@ Implement smooth transitions based on user input to filter (show all data, show 
 
 ## Published HTML:
 
-Click [ **Here** ](http://www-scf.usc.edu/~chenglil/a8/a8.html) to view HTML file. If the website not available, please follow the deployment procedure to view the result.
+Click [ **Here** ](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_barchart_interactive/a8.html) to view demo website. If the website not available, please follow the deployment procedure to view the result.
 
 
 ## HTML, Javascript, and CSS:
