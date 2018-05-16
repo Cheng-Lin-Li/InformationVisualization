@@ -15,7 +15,7 @@ This is my works on Information Visualization which includes:
 > * SVG Code: manually recreate the same bubble cloud by writing SVG code in index.html (i.e., writing SVG yourself, not re-using the SVG created by Inkscape!). Use a style.css file.
 > * Dynamic SVG: recreate the same bubble cloud using JavaScript (i.e., dynamically generating the SVG). Use a chart.js file.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) ** to explore the results.
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/SVG) to explore the results.
 
 ## 3. Inforgraphics analyze by Visualization Wheels
 * The Subject: Global Carbon Budget.
@@ -23,22 +23,22 @@ This is my works on Information Visualization which includes:
 >
 > Compare these two infographics by visualization wheels to analysis Pros and Cons, suggest improvements for the things they do poorly.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) ** to explore the results.
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/VisualizationWheels) to explore the results.
 >
 
 ## 4. R language with ggplot 2 and plotly packages
 * The Topic: Transponder flight data analysis of Santa Monica VOR(SMOVOR) by R with ggplot2 and plotly packages.
 >The scope of the analysis is to see if there are any quantifiable differences between before/after Columbus day (Monday, October 12th, 2015) - an oft cited milestone for recent changes in noise.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) ** to explore the results.
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/R_ggplot2) to explore the results.
 > Or to read the final report on the R Notebook which published on [RPubs website](http://rpubs.com/Cheng-Lin_Li/309552)
 
 
 ## 5. D3 with data binding
 * The Topic: Present Rural population (% of total population) data for 20 countries in 2016 by a stem-and-leaf plot, a bar chart, and a scatterplot.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding) ** to explore the results.
-> Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/v1.1/a5.html)
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_databinding) ** to explore the results.
+> Or to try the demo on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_databinding/a5.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
@@ -46,8 +46,8 @@ This is my works on Information Visualization which includes:
 ## 6. D3 Interactive Bar Chart - with sorting functions by Transition and data binding
 * The Topic: Present Top 10 GDP countries in 2015 by a bar chart with sorting function to present D3 transition and data binding techniques.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_barchart_interactive) ** to explore the results.
-> Or to read the html result on [My USC website](http://www-scf.usc.edu/~chenglil/a8/a8.html)
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_barchart_interactive) to explore the results.
+> Or to try the demo on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_barchart_interactive/a8.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
@@ -55,8 +55,8 @@ This is my works on Information Visualization which includes:
 ## 7. D3 Proportional Symbol Map and Choropleth Map - with world map
 * The Topic: Present Top 10 GDP countries in 2015 by Proportional Symbol World Map and Choropleth World Map.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_map) ** to explore the results.
-> Or to read the html result on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_map/a9.html)
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/D3_map) to explore the results.
+> Or to try the demo on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_map/a9.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
@@ -69,8 +69,8 @@ This is my works on Information Visualization which includes:
 
 * The Topic: Develop an application website to introduce Business Cycle.
 >
-> Click ** [Here](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle) ** to explore the results.
-> Or to read the html result on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/BusinessCycle/dist/index.html)
+> Click [** Here **](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle) to explore the results.
+> Or to try the demo on [My website](https://cheng-lin-li.github.io/assets/InformationVisualization/BusinessCycle/dist/index.html)
 >
 > If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
