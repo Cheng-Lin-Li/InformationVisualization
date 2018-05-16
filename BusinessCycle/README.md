@@ -17,7 +17,7 @@ The demo video can be accessed via [this link.](https://www.youtube.com/watch?v=
 
 ## Demo
 
-The application website can be accessed via [this link.](http://www-scf.usc.edu/~chenglil/business_cycle/)
+The application website can be accessed via [this link.](https://cheng-lin-li.github.io/assets/InformationVisualization/BusinessCycle/dist/index.html)
 
 ## Deployment
 
